@@ -143,6 +143,7 @@ section {
     position: relative;
     left: 0;
     top: 0;
+    max-height: 0vh;
 }
 
 .pagetitle {
@@ -158,11 +159,11 @@ section {
   }
   
   .pagetitle:nth-of-type(odd) {
-    transform: translateX(90%);
+    transform: translateX(-90%);
   }
   
   .pagetitle:nth-of-type(even) {
-    transform: translateX(90%);
+    transform: translateX(-90%);
   }
   
   .pagetitle.visible {
