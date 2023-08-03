@@ -1,0 +1,56 @@
+/*------------ github.com/Henewi -------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+body::-webkit-scrollbar {
+    width: 1vw;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 4rem;
+    border-radius: 0.7rem;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #000000;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+/* PRELOADER SECTION */
+
+.wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: radial-gradient(ellipse at bottom, #ffffff 0%, #ffffff 100%);
+    display: grid;
+    place-items: center;
+    transition: opacity .25s, visibility 1s;
+}
+
+.fade {
+    opacity: 0;
+    visibility: hidden;
+}
