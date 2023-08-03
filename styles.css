@@ -54,3 +54,33 @@ body::-webkit-scrollbar-track {
     opacity: 0;
     visibility: hidden;
 }
+
+.pagescontainer {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.page1 {
+    background-color: #161616;
+}
+
+.page2 {
+    background-color: #370042;
+}
+
+.page3 {
+    background-color: #6b0096;
+}
+
+.page4 {
+    background-color: #b700ff;
+}
