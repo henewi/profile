@@ -138,7 +138,7 @@ section i {
 .container div:nth-child(3){
     height: 65%;
     width: 80%;
-    background-color: #0e0e0e;
+    background-color: #222222;
     bottom: -15%;
     right: -20%;
     animation-delay: 0.3s;
