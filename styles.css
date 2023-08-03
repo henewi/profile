@@ -15,7 +15,7 @@ a {
 
 html {
     scroll-behavior: smooth;
-
+    overflow-x: hidden;
 }
 
 @viewport {
@@ -44,17 +44,18 @@ html {
 /* Background section */
 
 .background {
-    position: fixed;
+    position: absolute;
     z-index: 1;
     height: 100vh;
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: transparent;
+    background-color: rgba(0, 0, 255, 0);
     background-image: radial-gradient(
-        #ffd400 6px
+        #ffffff 1px,
+        transparent 1px
     );
-    background-size: 60px 60px;
+    background-size: 40px 40px;
 }
 
 *,
@@ -127,6 +128,8 @@ html {
 /* Pages container section */
 
 .pagescontainer {
+    overflow: hidden;
+    margin-top: 5vh;
     z-index: 2;
     position: absolute;
     top: 0;
@@ -139,7 +142,8 @@ html {
 }
 
 section {
-    height: 100vh;
+    height: 90vh;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,7 +156,14 @@ section {
 }
 
 .page2 {
-    background-color: #370042;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .page3 {
