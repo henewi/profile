@@ -123,7 +123,7 @@ section i {
 .container div:nth-child(1){
     height: 90%;
     width: 80%;
-    background-color: #000000;
+    background-color: #1d1d1d;
     left: -20%;
     top: -10%;
 }
@@ -138,7 +138,7 @@ section i {
 .container div:nth-child(3){
     height: 65%;
     width: 80%;
-    background-color: #000000;
+    background-color: #0e0e0e;
     bottom: -15%;
     right: -20%;
     animation-delay: 0.3s;
