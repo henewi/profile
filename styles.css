@@ -2,15 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+@import url('https://db.onlinewebfonts.com/c/88b96d4bbbd5526e485ca727c48da139?family=Arame');
+
 * {
     border: 0;
     margin: 0;
-    font-family: 'Inter', sans-serif;
 }
 
 a {
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -38,7 +40,7 @@ html {
     background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
     display: grid;
     place-items: center;
-    transition: opacity 2s, visibility 1s;
+    transition: opacity .4s, visibility 1s;
 }
 
 .fade {
@@ -54,11 +56,12 @@ html {
 .background {
     position: absolute;
     z-index: 1;
-    height: 100vh;
+    height: 1vh;
     width: 100%;
     padding: 0;
     margin: 0;
 }
+
 section i {
     position: absolute;
     background-color: white;
@@ -94,21 +97,19 @@ section i {
 
 .pagescontainer {
     overflow: hidden;
-    margin-top: 5vh;
     z-index: 2;
     position: absolute;
     top: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
     scroll-snap-stop: always;
+    font-family: Arame;
 }
 
 section {
-    height: 90vh;
-    margin-top: 10vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,24 +119,24 @@ section {
 
 .page1 {
     background-color: #16161600;
+    color: white;
+    font-size: 4rem;
 }
 
 .page2 {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    background: rgba(255, 255, 255, 0.01);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(4.9px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #16161600;
+    color: white;
+    font-size: 4rem;
 }
 
 .page3 {
-    background-color: #6b0096;
+    background-color: #16161600;
+    color: white;
+    font-size: 4rem;
 }
 
 .page4 {
-    background-color: #b700ff;
+    background-color: #16161600;
+    color: white;
+    font-size: 4rem;
 }
-

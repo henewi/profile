@@ -36,3 +36,18 @@ function stars(){
     }
 }
 stars();
+
+//Scrolling //
+
+const container = document.querySelector('.pagescontainer');
+const items = document.querySelectorAll('.page');
+
+container.addEventListener('wheel', (event) => {
+  event.preventDefault();
+  const delta = event.deltaY;
+
+  container.scrollBy({
+    top: delta,
+    behavior: 'smooth'
+  });
+});
