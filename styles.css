@@ -139,10 +139,18 @@ section {
 
 } */
 
+.pagenum {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
 .pagetitle {
+    position: relative;
+    left: 3.5vw;
+    top: 5vh;
     z-index: 10;
-    max-width: 500px;
-    margin-bottom:2em;
+    max-width: 500px;   
     opacity: 0;
     transition: all .25s ease-in-out;
     border-radius: 20px;
@@ -150,7 +158,7 @@ section {
   }
   
   .pagetitle:nth-of-type(odd) {
-    transform: translateX(-90%);
+    transform: translateX(90%);
   }
   
   .pagetitle:nth-of-type(even) {

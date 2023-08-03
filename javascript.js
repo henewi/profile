@@ -83,7 +83,7 @@ function isElementInViewport(element) {
    }
      else { 
       /* Removes Elements When Not In Viewport */
-      //elements[i].classList.remove("visible");
+      elements[i].classList.remove("visible");
      }
     }
    }
