@@ -26,11 +26,6 @@ html {
     display: none;
   }
 
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-}
-
 /* PRELOADER SECTION */
 
 .wrapper {
@@ -154,4 +149,15 @@ section {
     transition: all .75s ease-in-out;
     border-radius: 20px;
     font-size: 20vh;
+  }
+
+  .pagenumcont {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    display: flex;
+    height: 0px;
+    width: 43vw;
   }
