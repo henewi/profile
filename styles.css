@@ -113,7 +113,7 @@ section {
 .page {
     background-color: #16161600;
     color: white;
-    font-size: 90vh;
+    font-size: 10vh;
     display: flex;
     flex-direction: column;
 }
@@ -136,9 +136,11 @@ section {
 
 .pagenum {
     position: relative;
-    left: 0;
+    left: 1vw;
     top: 0;
     max-height: 0vh;
+    display: flex;
+    align-items: center;
 }
 
 .pagetitle {
@@ -152,12 +154,10 @@ section {
   }
 
   .pagenumcont {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    top: 0;
+    left: 1vw;
     display: flex;
-    height: 0px;
-    width: 43vw;
+    height: 100vh;
   }
