@@ -8,35 +8,6 @@ const fadeOut = () => {
 
 window.addEventListener('load', fadeOut);
 
-// STARS SECTION //
-
-function stars(){
-    const count = 200;
-    const section = document.querySelector('section');
-    var i = 0;
-
-    while (i < count){
-        const star = document.createElement('i');
-        const x = Math.floor(Math.random() * window.innerWidth)
-        const y = Math.floor(Math.random() * window.innerHeight)
-
-        const size = Math.random() * 4;
-        star.style.left = x+'px';
-        star.style.top = y+'px';
-        star.style.width = 1+size+'px';
-        star.style.height = 1+size+'px';
-
-        const duration = Math.random() * 2;
-
-        star.style.animationDuration = 2+duration+'s';
-        star.style.animationDelay = duration+'s';
-
-        section.appendChild(star);
-        i++
-    }
-}
-stars();
-
 //Scrolling //
 
 const container = document.querySelector('.pagescontainer');
@@ -53,4 +24,39 @@ container.addEventListener('wheel', (event) => {
 });
 
 
-// VP //
+
+// Background //
+
+let canvas = document.getElementById('canvas')
+let $ = canvas.getContext('2d')
+
+let col = function (x, y, r, g, b) {
+  $.fillStyle = "rgb(" + r + "," + g + "," + b + " )"
+  $.fillRect(x, y, 1, 1)
+}
+
+let R = function(x, y, t) {
+  return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + t)))
+}
+
+let G = function(x, y, t) {
+  return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)))
+}
+
+let B = function(x, y, t) {
+  return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(t / 9) + ((x - 100) * (x - 100)+(y - 100) * (y - 100)) / 1100)))
+} 
+
+let t = 0 
+
+let run = function() {
+  for(x = 0; x <= 35; x++) {
+    for (y = 0; y <= 35; y++) {
+      col(x, y, R(x, y, t), G(x, y, t), B(x, y, t))
+    }
+  }
+  t=t+0.080
+  window.requestAnimationFrame(run)
+}
+
+run()
