@@ -6,6 +6,8 @@
 
 @import url('https://db.onlinewebfonts.com/c/88b96d4bbbd5526e485ca727c48da139?family=Arame');
 
+@import url('https://fonts.cdnfonts.com/css/super-brigade');
+
 * {
     border: 0;
     margin: 0;
@@ -66,7 +68,7 @@ html {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scroll-snap-stop: always;
-    font-family: Arame;
+    font-family: 'Super Brigade';
 }
 
 section {
@@ -79,56 +81,50 @@ section {
 .page {
     background-color: #16161600;
     color: white;
-    font-size: 20vh;
+    font-size: 10vh;
     display: flex;
     flex-direction: column;
 }
-/* 
-.page1 {
 
+.page1 {
+    top: 40vh;
+    padding-left: 60vh;
+    padding-right: 20vh;
 }
 
 .page2 {
-
+    top: 40vh;
+    padding-left: 20vh;
+    padding-right: 10vh;
 }
 
 .page3 {
-
-}
-
-.page4 {
-
-} */
-
-.pagenum {
-    position: relative;
-    left: 1vw;
-    top: 6vh;
-    max-height: 10vh;
-    display: flex;
-    align-items: center;
-    background-color: #000000;
-    color: white;
-    transform: rotate(270deg);
-    mix-blend-mode: multiply;
+    top: 43vh;
+    padding-right: 5vh;
+    padding-left: 20vh;
 }
 
 .pagetitle {
-    position: relative;
-    left: 2.4vw;
-    top: 70vh;
-    z-index: 10;
-    transition: all .75s ease-in-out;
-    border-radius: 20px;
-  }
-
-  .pagenumcont {
-    position: relative;
     display: flex;
+    position: relative;
+    background-color: #000000;
+    color: white;
+    transform: rotate(270deg);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    justify-content: center;
     align-items: center;
-    left: 1vw;
-    top: 45 vh;
+    text-align: center;
+}
+
+  .pagetitlecont {
+    position: absolute;
     display: flex;
+    width: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
 canvas {
@@ -138,7 +134,7 @@ canvas {
 }
 
 .indexcont {
-    width: calc(300px);
+    width: calc(337px);
     height: 100vw;
     overflow: hidden;
 }
